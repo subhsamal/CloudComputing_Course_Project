@@ -1,0 +1,1 @@
+alert icmp any any -> any any (msg:"Alert! ICMP FLOOD DETECTION!!!"; itype:8; threshold: type threshold, track by_dst, count 10, seconds 30; rev:001;sid:10000001;priority:1;)

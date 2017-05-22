@@ -1,0 +1,1 @@
+alert tcp any any -> any 80 (msg:"Alert! SYN FLOOD DETECTION!!!"; flags:S; flow:stateless; threshold:type limit, track by_src, count 70, seconds 1; sid:10000006;rev:001)

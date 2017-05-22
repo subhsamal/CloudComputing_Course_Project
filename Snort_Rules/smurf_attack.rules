@@ -1,0 +1,1 @@
+alert icmp any any -> any any (msg:"Alert! SMURF DETECTION!!!"; itype:8; threshold: type limit, track by_src, count 10, seconds 30; sid:10000004;rev:001)

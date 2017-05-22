@@ -1,0 +1,1 @@
+alert udp any any -> any any (msg:"Alert! UDP FLOOD DETECTION!!!"; priority:2; sid:10000008;rev:001)
